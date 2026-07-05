@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        /*Exercise 1*/
+        .content-box {
+            width: 300px;
+            height: 100px;
+            background-color: lightskyblue;
+        }
+        .padding-box {
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            background-color:lightblue;
+        }
+        .boder-box {
+            width: 300px;
+            height: 100px;
+            border: 5px solid blue;
+            background-color: skyblue;
+        }
+        .margin-box {
+            width: 300px;
+            height: 100;
+            margin: 20px;
+            background-color: pink;
+        }
+        .next-box {
+            width: 300px;
+            height: 100px;
+            background-color: lightpink;
+        }
+        /*Exercise 2*/
+        /*broken version*/
+        .broken-box{
+            width: 300px;
+            padding: 20px;
+            border: none;
+        }
+        /*fixed version*/
+        .fixed-box{
+            width: 300px;
+            padding: 20px;
+            border: none;
+            box-sizing: border-box;
+            background-color: lightgreen;
+        }
+        /*Exercise 3*/
+        .card{
+            width: 300px;
+            padding: 20px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            background-color: white;
+            margin-top: 20px;
+        }
+        .card img{
+            width: 100%;
+            display: block;
+        }
+        .card p{
+            margin-bottom: 15px;
+        }
+        .card button{
+            padding: 10px 20px;
+            background-color: navy;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise 1: CSS Box Model Visualization</h1>
+    <H2>Content Box</H2>
+    <div class="content-box">
+        Content area.
+    </div>
+    <H2>Padding Box</H2>
+    <div class="padding-box">
+        Padding.
+    </div>
+    <H2>Border Box</H2>
+    <div class="boder-box">
+        Border.
+    </div>
+    <H2>Margin Box</H2>
+    <div class="margin-box">
+        Margins.
+    </div>
+    <div class="next-box">
+        Demonstrate the next box.
+    </div>
+    <h1>Exercise 2: Layout Debug.</h1>
+    <h2>Broken Box(340px Total width)</h2>
+    <div class="broken-box">
+        broken code box
+    </div>
+    <h2>Fixed Box(300px Total width)</h2>
+    <div class="fixed-box">
+        Fixed code box
+    </div>
+    <h1>Exercise 3: Card Component</h1>
+    <div class="card">
+        <img src="https://github.com/Grace-Loko.png"alt="Grace Loko's Profile Photo">
+        <h2>Grace Loko</h2>
+        <p>I am a web development student learning HTML and CSS. This card demonstrates the CSS card Box Model</p>
+        <button>Read More</button>
+    </div>
+</body>
+</html>
